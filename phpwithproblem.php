@@ -22,5 +22,5 @@
 
 if ('A' === 'B') {
 	echo 'A';
-    echo 'B';
+	echo 'B';
 }
