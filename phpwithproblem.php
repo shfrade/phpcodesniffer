@@ -2,7 +2,7 @@
 /**
  * File doc
  * PHP version 7.4
- * 
+ *
  * @category Category
  * @package  Package
  * @author   Octavio <octavio.marchi@gmail.com>
@@ -12,7 +12,7 @@
 
 /**
  * Class doc
- * 
+ *
  * @category Category
  * @package  Package
  * @author   Octavio <octavio.marchi@gmail.com>
@@ -21,9 +21,11 @@
  */
 
 
-if('A' === 'B')
-{
-echo "a";
+if ('A' === 'B') {
+    echo "a";
 }
 
-function teste($a){ return $a; }
+function teste($a)
+{
+    return $a;
+}
