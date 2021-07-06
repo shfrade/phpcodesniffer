@@ -1,6 +1,7 @@
 <?php
 
 namespace base;
+
 /**
  * File doc
  * PHP version 7.4
@@ -22,7 +23,8 @@ namespace base;
  * @link     5
  */
 
-class UmTest {
+class UmTest
+{
 	private $nome;
 
 	public function getNome()
