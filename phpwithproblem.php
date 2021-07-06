@@ -1,4 +1,6 @@
 <?php
+
+namespace base;
 /**
  * File doc
  * PHP version 7.4
@@ -23,11 +25,13 @@
 class UmTest {
 	private $nome;
 
-	public function getNome() {
+	public function getNome()
+	{
 		return $this->nome;
 	}
 
-	public function setNome($nome){
+	public function setNome($nome)
+	{
 		$this->nome = $nome;
 		return;
 	}
