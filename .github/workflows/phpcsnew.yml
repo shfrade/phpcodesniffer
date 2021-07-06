@@ -1,0 +1,26 @@
+name: PHP Composer
+
+on: pull_request
+
+jobs:
+  runPHPCSInspection:
+    name: Run PHPCS inspection
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        ref: ${{ github.event.pull_request.head.sha }}
+    - name: Run PHPCS inspection
+      uses: rtCamp/action-phpcs-code-review@v2
+      env:
+        GH_BOT_TOKEN: ${{ secrets.SNIFFER_PERSONAL_TOKEN }}
+        SKIP_FOLDERS: "tests,.github"
+        PHPCS_SNIFFS_EXCLUDE: "WordPress.Files.FileName"
+      with:
+        args: "WordPress,WordPress-Core,WordPress-Docs"
+
+    # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
+    # Docs: https://getcomposer.org/doc/articles/scripts.md
+
+    # - name: Run test suite
+    #   run: composer run-script test
