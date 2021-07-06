@@ -20,12 +20,6 @@
  * @link     5
  */
 
-
-if ('A' === 'B') {
-    echo "a";
-}
-
-function teste($a)
-{
-    return $a;
+if ( 'A' === 'B' ) {
+	echo 'a';
 }
