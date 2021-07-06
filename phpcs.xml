@@ -57,8 +57,9 @@
 
     <!-- 2.4 Indenting -->
 
+    <!-- DEFAULT PSR12 whitespace instead of tabs disabled for REPAIR Q for now. -->
     <!-- Code MUST use an indent of 4 spaces for each indent level, and MUST NOT use tabs for indenting. -->
-    <rule ref="Generic.WhiteSpace.ScopeIndent">
+    <!-- <rule ref="Generic.WhiteSpace.ScopeIndent">
         <properties>
             <property name="ignoreIndentationTokens" type="array">
                 <element value="T_COMMENT"/>
@@ -66,7 +67,19 @@
             </property>
         </properties>
     </rule>
-    <rule ref="Generic.WhiteSpace.DisallowTabIndent"/>
+    <rule ref="Generic.WhiteSpace.DisallowTabIndent"/> -->
+
+    <!-- Default rule for Wordpress to use tab instead of white space. -->
+    <rule ref="PSR2">
+        <exclude name="Generic.WhiteSpace.DisallowTabIndent"/>
+    </rule>
+    <rule ref="Generic.WhiteSpace.DisallowSpaceIndent"/>
+    <rule ref="Generic.WhiteSpace.ScopeIndent">
+        <properties>
+            <property name="indent" value="4"/>
+            <property name="tabIndent" value="true"/>
+        </properties>
+    </rule>
 
     <!-- 2.5 Keywords and Types -->
 
