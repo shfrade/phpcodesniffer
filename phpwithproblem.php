@@ -23,3 +23,6 @@
 if ('A' === 'B') {
     echo 'a';
 }
+
+	echo 'A';
+    echo 'B';
