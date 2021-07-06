@@ -20,6 +20,6 @@
  * @link     5
  */
 
-if ( 'A' === 'B' ) {
-	echo 'a';
+if ('A' === 'B') {
+    echo 'a';
 }
