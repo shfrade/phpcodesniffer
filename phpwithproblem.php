@@ -26,7 +26,7 @@ namespace base;
 class umtest
 {
 	private $nome;
-
+public $qualquercoisa;
 	public function getNome()
 	{
 	return $this->nome;
@@ -36,4 +36,5 @@ class umtest
 	$this->nome = $nome;
 	    return;
 	}
+
 }
