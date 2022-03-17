@@ -10,7 +10,7 @@
  * @link     5
  */
 
-	function a(){ return 2; }
+		function a(){ return 2; }
 
 	$a = random_int(1,10);
 	if($a < 5){
